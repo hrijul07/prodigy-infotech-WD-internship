@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head> 
+<div class="wrapper"> 
+
+   <div class="container">
+
+    <h1>STOPWATCH</h1>
+
+    <div id="time">00:00:00.00</div>
+
+    <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+        <button onclick="recordLap()">Lap</button>
+    </div>
+
+    <!-- LAPS BOX -->
+    <div class="laps-box">
+        <h3>Laps</h3>
+        <ul id="lapsList"></ul>
+    </div>
+ 
+</body>
+</html>

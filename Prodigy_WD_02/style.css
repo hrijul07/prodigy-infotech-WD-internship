@@ -1,0 +1,150 @@
+css
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transition: 0.3s ease;
+}
+
+/* MAIN CONTAINER */
+.container {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 35px;
+    width: 340px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* TIMER DISPLAY */
+#time {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 25px 0;
+    letter-spacing: 2px;
+}
+
+/* BUTTON GROUP */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* INDIVIDUAL BUTTON COLORS */
+button:nth-child(1) {
+    background: #00c9a7;
+    color: white;
+}
+
+button:nth-child(2) {
+    background: #ffc75f;
+}
+
+button:nth-child(3) {
+    background: #ff6f61;
+    color: white;
+}
+
+/* HOVER EFFECT */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* SESSION TEXT */
+h3 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* DARK MODE BUTTON */
+#themeBtn {
+    margin-top: 15px;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* DARK MODE */
+.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.dark .container {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* HEADING FIX */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* LAPS BOX */
+.laps-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+/* LAPS TITLE */
+.laps-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* LIST RESET */
+#lapsList {
+    list-style: none;
+    padding: 0;
+}
+
+/* EACH LAP ITEM */
+#lapsList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.25);
+    font-size: 14px;
+}
